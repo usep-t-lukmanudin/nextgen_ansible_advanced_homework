@@ -19,4 +19,4 @@
     name:
       - httpie
       - python-pip 
-    state= latest
+    state: latest
