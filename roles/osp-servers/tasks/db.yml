@@ -14,7 +14,8 @@
       #!/bin/bash
       curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-      curl -o /tmp/internal.repo http://www.opentlc.com/download/ansible_bootcamp/repo/internal.repo
+      # curl -o /tmp/internal.repo http://www.opentlc.com/download/ansible_bootcamp/repo/internal.repo
+      curl -o /tmp/internal.repo https://raw.githubusercontent.com/tonykay/solution_ansible_advanced_openstack/main/files/open_three-tier-app.repo
       cp /tmp/internal.repo /etc/yum.repos.d/internal.repo
   register: instanceip
 
