@@ -47,4 +47,4 @@
         chdir: /root
     - name: Wait for mail
       pause:
-        minutes: 20 
+        minutes: 10 
